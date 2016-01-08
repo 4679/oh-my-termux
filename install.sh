@@ -7,7 +7,7 @@ git clone git://github.com/4679/oh-my-termux.git oh-my-termux
 clear
 
 if [ -d "$HOME/.termux" ]; then
-								mv $HOME/.termux $HOME/.termux.bak
+ mv $HOME/.termux $HOME/.termux.bak
 fi
 mv /data/data/com.termux/files/usr/etc/apt/sources.list /data/data/com.termux/files/usr/etc/apt/sources.list.bak
 
