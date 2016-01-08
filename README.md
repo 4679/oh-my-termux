@@ -3,7 +3,7 @@
 Setup Termux with:
 
  - Solarized Dark
-	- Ubuntu Mono with powerline patch
+ - Ubuntu Mono with powerline patch
  - oh-my-zsh
 
 # Requirement
