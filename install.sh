@@ -18,7 +18,7 @@ termux-reload-settings
 
 apt update
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
-cp $HONE/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
+cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
 chsh -s /data/data/com.termux/files/usr/bin/zsh
 zsh
 
