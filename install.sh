@@ -3,7 +3,7 @@
 termux-setup-storage
 
 mv /data/data/com.termux/files/usr/etc/apt/sources.list /data/data/com.termux/files/usr/etc/apt/sources.list.bak
-curl https://raw.githubusercontent.com/4679/oh-my-termux/master/sources.list > /data/data/com.termux/files/usr/etc/apt/sources.list
+curl -fsSL https://raw.githubusercontent.com/4679/oh-my-termux/master/sources.list > /data/data/com.termux/files/usr/etc/apt/sources.list
 
 apt update
 apt install -y git zsh
