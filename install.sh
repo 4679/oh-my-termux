@@ -19,7 +19,7 @@ mv oh-my-termux/.termux $HOME/.termux
 apt update
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-chsh -s /data/data/com.termux/files/usr/bin/zsh
+chsh -s zsh
 
 echo Done!
 
