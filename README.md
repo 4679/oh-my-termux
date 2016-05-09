@@ -2,7 +2,7 @@
 
 Setup Termux with:
 
- - Molokai
+ - Solarized Dark
  - Ubuntu Mono with powerline patch
  - oh-my-zsh
 
