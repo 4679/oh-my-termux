@@ -1,7 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-apt update
-apt install -y git zsh
+pkg install -y git zsh curl
 clear
 
 if [ -d "$HOME/.termux" ]; then
