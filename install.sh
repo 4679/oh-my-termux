@@ -12,10 +12,11 @@ curl -fsLo $HOME/.termux/font.ttf --create-dirs https://cdn.rawgit.com/4679/oh-m
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh --depth 1
 cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' $HOME/.zshrc
 chsh -s zsh
 
 termux-setup-storage
 
-echo Done!
+echo "Done! Please restart Termux."
 
 exit
