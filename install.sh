@@ -1,19 +1,20 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-pkg install -y git zsh curl
+pkg install -y git fish
 clear
 
 if [ -d "$HOME/.termux" ]; then
  mv $HOME/.termux $HOME/.termux.bak
 fi
 
-curl -fsLo $HOME/.termux/colors.properties --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@master/.termux/colors.properties
-curl -fsLo $HOME/.termux/font.ttf --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@master/.termux/font.ttf
+curl -fsLo $HOME/.termux/colors.properties --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/.termux/colors.properties
+curl -fsLo $HOME/.termux/font.ttf --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/.termux/font.ttf
+curl -fsLo $HOME/.termux/termux.properties --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/.termux/termux.properties
 
-git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh --depth 1
-cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' $HOME/.zshrc
-chsh -s zsh
+curl -fsLo $HOME/.promptline.sh --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/fish/.promptline.sh
+curl -fsLo $HOME/.config/fish/config.fish --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/fish/config.fish
+
+chsh -s fish
 
 termux-setup-storage
 

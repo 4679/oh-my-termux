@@ -2,9 +2,9 @@
 
 Setup Termux with:
 
- - Solarized Dark
+ - Nord color scheme
  - Ubuntu Mono with powerline patch
- - oh-my-zsh
+ - fish with agnoster promptline
 
 # Requirement
 - curl
@@ -14,5 +14,5 @@ pkg install -y libcurl curl
 
 # Installation
 ```bash
-bash -c "$(curl -fsSL https://git.io/oh-my-termux)"
+bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/install.sh)"
 ```
