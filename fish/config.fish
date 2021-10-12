@@ -1,9 +1,8 @@
-function fish_prompt
-  env FISH_VERSION=$FISH_VERSION PROMPTLINE_LAST_EXIT_CODE=$status bash ~/.promptline.sh left
-end
+if not functions -q undle; eval (curl -sfL https://raw.fastgit.org/tuvistavie/fundle/master/install-fundle.fish | sed 's#https://git.io/fundle#https://raw.fastgit.org/tuvistavie/fundle/master/functions/fundle.fish#'); end
 
-function fish_right_prompt
-  env FISH_VERSION=$FISH_VERSION PROMPTLINE_LAST_EXIT_CODE=$status bash ~/.promptline.sh right
-end
+fundle plugin hauleth/agnoster
 
-set fish_greeting
+fundle init
+
+if status is-interactive
+end

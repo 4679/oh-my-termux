@@ -2,14 +2,14 @@
 
 Setup Termux with:
 
- - Nord color scheme
- - Ubuntu Mono with powerline patch
+ - One Dark color scheme
+ - Cascadia Mono PL font
  - fish with agnoster promptline
 
 # Requirement
 - curl
 ```bash
-pkg install -y libcurl curl
+pkg install -y curl
 ```
 
 # Installation
