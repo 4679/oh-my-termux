@@ -11,6 +11,7 @@ curl -fsLo $HOME/.termux/colors.properties --create-dirs https://cdn.jsdelivr.ne
 curl -fsLo $HOME/.termux/font.ttf --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/.termux/font.ttf
 curl -fsLo $HOME/.termux/termux.properties --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/.termux/termux.properties
 
+curl -fsLo $HOME/.config/fish/functions/fundle.fish --create-dirs https://cdn.jsdelivr.net/gh/tuvistavie/fundle@master/functions/fundle.fish
 curl -fsLo $HOME/.config/fish/config.fish --create-dirs https://cdn.jsdelivr.net/gh/4679/oh-my-termux@fish/fish/config.fish
 
 chsh -s fish
